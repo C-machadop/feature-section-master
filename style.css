@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: #121826;
+  --background-cards: #212936;
+
+  --info-color: #9da3ae;
+  --info-color-light: #d2d5da;
+
+  --title-color: #e5e7eb;
+
+  --icon-color-1: #fceed8;
+  --icon-color-2: #dee9fc;
+  --icon-color-3: #fbe5e6;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+
+  background-image: url(./resources/Background_image@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--background-color);
+
+  line-height: 1.5;
+}
+
+.feedback-section {
+  padding: 20px;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.header p {
+  color: var(--info-color);
+}
+
+/* CARDS CONTAINER */
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 350px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  gap: 1rem;
+  background-color: var(--background-cards);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.card-paragraph {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--info-color-light);
+  max-height: calc(1.5em * 3);
+  overflow: hidden;
+
+  margin-bottom: 10px;
+}
+
+/* UTILS */
+.title-color {
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.icon-collect {
+  background-color: var(--icon-color-1);
+}
+
+.icon-ask {
+  background-color: var(--icon-color-2);
+}
+
+.icon-priori {
+  background-color: var(--icon-color-3);
+}
